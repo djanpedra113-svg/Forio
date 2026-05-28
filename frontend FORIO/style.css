@@ -1,0 +1,123 @@
+:root {
+  --colour-60: #FFFCED;
+  --colour-30: #00002C;
+  --colour-10: #0A0A0A;
+  --colour-white: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #FFFCED;
+  font-family: "montserrat", sans-serif;
+}
+
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.welcome-message {
+  width: 65%;
+}
+
+.login-form {
+  width: 35%;
+  background-color: var(--colour-30);
+  color: var(--colour-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  transition: all 0.6s ease;
+}
+
+.welcome-content {
+ width: 100%;
+ max-width: 800px;
+ display: flex;
+ align-items: center;
+}
+
+.welcome-text h1 {
+  font-size: 50px;
+  margin-bottom: 25px;
+  color:#00002C;
+  font-family: "montserrat", sans-serif;
+  padding-top: 100px;
+}
+
+.welcome-text p {
+  font-size: 18px;
+  line-height: 1.9;
+  width: 545px;
+  color: var(--colour-10);
+  font-family: "montserrat", sans-serif;
+  padding-top: 7px;
+}
+
+.logo-img {
+width: 335px;
+height: auto;
+object-fit: contain;
+margin-bottom: 50px;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-box h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 12px 25px;
+  border: none;
+  background-color: #02025b;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #262578;
+}
+
+.register-btn{
+  display: block;
+  width: 100%;
+  padding: 12px 25px;
+  background-color: #02025b;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.register-btn:hover {
+  background-color: #262578;
+}

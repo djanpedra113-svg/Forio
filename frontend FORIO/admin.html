@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forio Admin Panel</title>
+    <link rel="stylesheet" href="admin.css"> 
+
+</head>
+<body>
+    <h1>Forio Admin Results</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Quiz</th>
+                <th>Score</th>
+                <th>Total</th>
+                <th>Mistakes</th>
+            </tr>
+        </thead>
+        <tbody id="resultsTable"></tbody>
+    </table>
+<script>
+
+fetch("http://localhost:3000/admin/results")
+.then(response => response.json())
+.then(data => {
+    const table = document.getElementById("resultsTable");
+    data.forEach(result => {
+        const row = `
+            <tr>
+                <td>${result.username}</td>
+                <td>${result.quizName}</td>
+                <td>${result.score}</td>
+                <td>${result.total}</td>
+                <td>${result.mistakes}</td>
+            </tr>
+        `;
+        table.innerHTML += row;
+    });
+
+})
+.catch(error => {
+    console.error("Error loading results:", error);
+});
+
+</script>
+</body>
+</html>

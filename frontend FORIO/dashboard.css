@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat", sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color: #FFFCED;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 25px;  
+    font-family: "montserrat", sans-serif;
+    color: #00002C;
+}
+
+h2{
+    margin-bottom: 20px;
+    font-family: "montserrat", sans-serif;
+    color:#FFFCED;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.side-menu{
+    position: fixed; 
+    background-color: #00002C;
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    padding: 20px;
+}
+
+.side-menu .Dashboard{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.side-menu li{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#FFFCED;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.side-menu li:hover{
+    background-color: #262578;
+    cursor: pointer;
+}
+
+.modules-container {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-left: 220px;
+}
+
+.modules-container h1 {
+    grid-column: span 3;
+    margin-bottom: 10px;
+    color: #00002C;
+}
+
+.module-card h2{
+    color:#0A0A0A;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: "montserrat", sans-serif;
+    font-size: 25px;
+}
+
+.module-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(120, 2, 255, 0.1);
+    width: 350px;
+    height: 500px;
+    border: 1px solid #E0E0E0;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+.module-card:hover{
+    transform: translateY(-5px);
+}
+
+.module-card {
+    color: #00002C;
+    font-size: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.module-card p {
+    color: #0A0A0A;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: "montserrat", sans-serif;
+}
+
+.profile-btn {
+font-size: 28px;
+    font-family: "montserrat", sans-serif;
+    color:#FFFCED;
+    font-size: 18px;
+}
